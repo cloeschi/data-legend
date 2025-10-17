@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Legend</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: #f0f0f0;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            background: #f0f0f0;
+        }
+        
+        .header {
+            background: white;
+            color: #5cb8c4;
+            padding: 15px 40px;
+            text-align: center;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+        
+        .content {
+            padding: 30px;
+            background: #f0f0f0;
+        }
+        
+        .columns-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .column {
+            background: #f0f0f0;
+        }
+        
+        .column-title {
+            color: #5cb8c4;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            padding: 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #d0d0d0;
+            text-align: center;
+        }
+        
+        .metric-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #f0f0f0;
+            border-left: 3px solid #5cb8c4;
+        }
+        
+        .metric-name {
+            font-weight: 700;
+            color: #333;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+        
+        .metric-description {
+            color: #666;
+            font-size: 11px;
+            line-height: 1.5;
+        }
+        
+        .footer {
+            background: #f0f0f0;
+            padding: 15px 40px;
+            text-align: right;
+            border-top: 2px solid #d0d0d0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>DATA LEGEND</h1>
+        </div>
+        
+        <div class="content">
+            <div class="columns-container">
+                <!-- Column 1: Profile Metrics -->
+                <div class="column">
+                    <h2 class="column-title">Profile Metrics</h2>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Pageviews</div>
+                        <div class="metric-description">Number of page views of your tool profile (includes all profile pages).</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Sessions</div>
+                        <div class="metric-description">Visit sessions on your tool profile. A session includes all interactions within a specific timeframe.</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Unique Users</div>
+                        <div class="metric-description">Individual people who visited your profile. Each person counted once (opt-in users only).</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Avg. Session Duration</div>
+                        <div class="metric-description">Average time spent per visit in minutes. Measures active interaction (scrolling, reading, clicking).</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">AI Traffic in %</div>
+                        <div class="metric-description">Percentage of traffic from AI-powered sources (ChatGPT, Perplexity).</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Profile Clickouts</div>
+                        <div class="metric-description">Total clicks from your profile to your tool website (excluding LinkedIn & X).</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">CTR (Profile to Website)</div>
+                        <div class="metric-description">Click-Through Rate: (Clicks ÷ Sessions) × 100.</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Website Clickouts</div>
+                        <div class="metric-description">Clicks on the main website button.</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Second CTA Contact Clicks</div>
+                        <div class="metric-description">Clicks on secondary call-to-action buttons.</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Pricing Clickout</div>
+                        <div class="metric-description">Clicks on pricing information.</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">LinkedIn/X Clickout</div>
+                        <div class="metric-description">Clicks on social media profiles.</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">ContentHub Mentions</div>
+                        <div class="metric-description">Number of mentions in OMR Content Hub articles (tool must be listed as software).</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Top Traffic Sources</div>
+                        <div class="metric-description">Origins of traffic (Google, LinkedIn, direct, etc.).</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">PDP (Product Detail Page)</div>
+                        <div class="metric-description">Detail pages of other tools on OMR Reviews.</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">CDP (Category Detail Page)</div>
+                        <div class="metric-description">Category overview pages on OMR Reviews.</div>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Review Metrics -->
+                <div class="column">
+                    <h2 class="column-title">Review Metrics</h2>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Total Reviews</div>
+                        <div class="metric-description">Total number of all reviews received.</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">New Reviews</div>
+                        <div class="metric-description">Number of new reviews in selected time period (with % change).</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Category Slug</div>
+                        <div class="metric-description">Number of reviews broken down by categories.</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">NPS (Net Promoter Score)</div>
+                        <div class="metric-description">Customer satisfaction score measuring likelihood to recommend.</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">OMR Score</div>
+                        <div class="metric-description">Average overall rating of your tool (scale 0-10).</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Avg. Ease of Use</div>
+                        <div class="metric-description">Average rating of user-friendliness (0-10).</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Avg. Ease of Setup</div>
+                        <div class="metric-description">Average rating of setup simplicity (0-10).</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Avg. Requirement Score</div>
+                        <div class="metric-description">Average rating of how well the tool meets requirements (0-10).</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Avg. Customer Support</div>
+                        <div class="metric-description">Average rating of customer support (0-10).</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Monthly Reviews</div>
+                        <div class="metric-description">Visualization of review distribution across months.</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Category Reviews</div>
+                        <div class="metric-description">Number of reviews per category/use case.</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Category Check Rank</div>
+                        <div class="metric-description">Your position within different categories. CDP = Category page ranking. Lower rank = better position.</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Is Top-Rated</div>
+                        <div class="metric-description">Status indicating whether your tool is marked as "Top-Rated" (Yes/No).</div>
+                    </div>
+                </div>
+                
+                <!-- Column 3: Benchmark Metrics -->
+                <div class="column">
+                    <h2 class="column-title">Benchmark Metrics</h2>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Vendor</div>
+                        <div class="metric-description">Your individual performance metrics.</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Category Avg.</div>
+                        <div class="metric-description">Average values of all tools in your main category.</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Top 3 Avg.</div>
+                        <div class="metric-description">Average values of the three highest-ranked tools in your category.</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Comparison Metrics</div>
+                        <div class="metric-description">Includes: Pageviews • Review Count • PDP Clickouts • Avg. Time on Site</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Tool Traffic Over Time</div>
+                        <div class="metric-description">Monthly breakdown of all traffic metrics over selected timeframe showing trends and seasonal patterns.</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-name">Opt-in</div>
+                        <div class="metric-description">Users who accepted cookie tracking, allowing accurate unique user measurement.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <svg width="120" height="30" viewBox="0 0 120 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <text x="0" y="22" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#000">OMR</text>
+                <rect x="55" y="6" width="65" height="18" rx="2" fill="#000"/>
+                <text x="60" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#fff">REVIEWS</text>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>
